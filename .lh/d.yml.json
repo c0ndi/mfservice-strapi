@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 3,
+            "activePatchIndex": 4,
             "patches": [
                 {
                     "date": 1680557033147,
@@ -20,6 +20,10 @@
                 {
                     "date": 1680557219692,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n version: '3'\r\n services:\r\n   strapi:\r\n-    container_name: strapi\r\n+    container_name: mfservice-strapi\r\n     build: .\r\n     image: strapi:latest\r\n     restart: unless-stopped\r\n     env_file: .env\r\n"
+                },
+                {
+                    "date": 1680558401397,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n services:\r\n   strapi:\r\n     container_name: mfservice-strapi\r\n     build: .\r\n-    image: strapi:latest\r\n+    image: c0ndi/mfservice-strapi:latest\r\n     restart: unless-stopped\r\n     env_file: .env\r\n     environment:\r\n       DATABASE_CLIENT: sqlite\r\n"
                 }
             ],
             "date": 1680557033147,
