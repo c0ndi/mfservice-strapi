@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_about_motorcycle_parameters",
+  "info": {
+    "displayName": "motorcycleParameters"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "parameter": {
+      "type": "string"
+    }
+  }
+}

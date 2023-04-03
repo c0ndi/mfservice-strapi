@@ -1,0 +1,39 @@
+{
+  "collectionName": "components_home_hero_components",
+  "info": {
+    "displayName": "heroComponent",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "buttonLabel": {
+      "type": "string"
+    },
+    "cover": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "buttonLink": {
+      "type": "enumeration",
+      "enum": [
+        "/#obsługa",
+        "/#o-nas",
+        "/#faq",
+        "/#kontakt"
+      ]
+    }
+  }
+}

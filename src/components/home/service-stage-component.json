@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_home_service_stage_components",
+  "info": {
+    "displayName": "ServiceStageComponent",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "singleStages": {
+      "displayName": "singleStages",
+      "type": "component",
+      "repeatable": true,
+      "component": "home.single-stages",
+      "max": 5,
+      "min": 3
+    }
+  }
+}

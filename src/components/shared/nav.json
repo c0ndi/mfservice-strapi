@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_shared_navs",
+  "info": {
+    "displayName": "nav"
+  },
+  "options": {},
+  "attributes": {
+    "links": {
+      "displayName": "links",
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.links"
+    }
+  }
+}

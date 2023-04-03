@@ -1,0 +1,39 @@
+{
+  "collectionName": "components_home_form_components",
+  "info": {
+    "displayName": "FormComponent",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "formHeading": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "mail": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "formClause": {
+      "type": "text"
+    },
+    "ceoCover": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  }
+}

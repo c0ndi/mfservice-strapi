@@ -1,0 +1,40 @@
+{
+  "kind": "singleType",
+  "collectionName": "homes",
+  "info": {
+    "singularName": "home",
+    "pluralName": "homes",
+    "displayName": "Home",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "heroComponent": {
+      "displayName": "heroComponent",
+      "type": "component",
+      "repeatable": false,
+      "component": "home.hero-component"
+    },
+    "serviceStageComponent": {
+      "displayName": "ServiceStageComponent",
+      "type": "component",
+      "repeatable": false,
+      "component": "home.service-stage-component"
+    },
+    "aboutUsComponent": {
+      "displayName": "AboutUsComponent",
+      "type": "component",
+      "repeatable": false,
+      "component": "home.about-us-component"
+    },
+    "faqComponent": {
+      "displayName": "FaqComponent",
+      "type": "component",
+      "repeatable": false,
+      "component": "home.faq-component"
+    }
+  }
+}

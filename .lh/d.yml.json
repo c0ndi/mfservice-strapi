@@ -1,0 +1,30 @@
+{
+    "sourceFile": "d.yml",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 3,
+            "patches": [
+                {
+                    "date": 1680557033147,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1680557045381,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,8 +6,18 @@\n     image: strapi:latest\r\n     restart: unless-stopped\r\n     env_file: .env\r\n     environment:\r\n+    HOST=0.0.0.0\r\n+PORT=1337\r\n+APP_KEYS=jplVjSMVckQjUEhj3AqBhg==,0E49XHybs5c7E/OhAxhYAQ==,zKOOwNWhtEqJmu21jXUNBQ==,OgatMNVXd0emr4vWKUfj8Q==\r\n+API_TOKEN_SALT=e9gAyYoouCRxD7IYm2WWtg==\r\n+ADMIN_JWT_SECRET=5BK7XVyYHOyR9R3xYGpU/Q==\r\n+TRANSFER_TOKEN_SALT=reuedEXKU8QQwcJqo7VFFQ==\r\n+# Database\r\n+DATABASE_CLIENT=sqlite\r\n+DATABASE_FILENAME=.tmp/data.db\r\n+JWT_SECRET=hb6c/w2v+w0ZPBuV61IqCg==\r\n       DATABASE_CLIENT: ${DATABASE_CLIENT}\r\n       DATABASE_HOST: strapiDB\r\n       DATABASE_PORT: ${DATABASE_PORT}\r\n       DATABASE_NAME: ${DATABASE_NAME}\r\n"
+                },
+                {
+                    "date": 1680557131702,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,28 +6,15 @@\n     image: strapi:latest\r\n     restart: unless-stopped\r\n     env_file: .env\r\n     environment:\r\n-    HOST=0.0.0.0\r\n-PORT=1337\r\n-APP_KEYS=jplVjSMVckQjUEhj3AqBhg==,0E49XHybs5c7E/OhAxhYAQ==,zKOOwNWhtEqJmu21jXUNBQ==,OgatMNVXd0emr4vWKUfj8Q==\r\n-API_TOKEN_SALT=e9gAyYoouCRxD7IYm2WWtg==\r\n-ADMIN_JWT_SECRET=5BK7XVyYHOyR9R3xYGpU/Q==\r\n-TRANSFER_TOKEN_SALT=reuedEXKU8QQwcJqo7VFFQ==\r\n-# Database\r\n-DATABASE_CLIENT=sqlite\r\n-DATABASE_FILENAME=.tmp/data.db\r\n-JWT_SECRET=hb6c/w2v+w0ZPBuV61IqCg==\r\n-      DATABASE_CLIENT: ${DATABASE_CLIENT}\r\n-      DATABASE_HOST: strapiDB\r\n-      DATABASE_PORT: ${DATABASE_PORT}\r\n-      DATABASE_NAME: ${DATABASE_NAME}\r\n-      DATABASE_USERNAME: ${DATABASE_USERNAME}\r\n-      DATABASE_PASSWORD: ${DATABASE_PASSWORD}\r\n-      JWT_SECRET: ${JWT_SECRET}\r\n-      ADMIN_JWT_SECRET: ${ADMIN_JWT_SECRET}\r\n-      APP_KEYS: ${APP_KEYS}\r\n-      NODE_ENV: ${NODE_ENV}\r\n+      DATABASE_CLIENT: sqlite\r\n+      DATABASE_FILENAME: .tmp/data.db\r\n+      JWT_SECRET: hb6c/w2v+w0ZPBuV61IqCg==\r\n+      ADMIN_JWT_SECRET: 5BK7XVyYHOyR9R3xYGpU/Q==\r\n+      APP_KEYS: jplVjSMVckQjUEhj3AqBhg==,0E49XHybs5c7E/OhAxhYAQ==,zKOOwNWhtEqJmu21jXUNBQ==,OgatMNVXd0emr4vWKUfj8Q==\r\n+      API_TOKEN_SALT: e9gAyYoouCRxD7IYm2WWtg==\r\n+      TRANSFER_TOKEN_SALT: reuedEXKU8QQwcJqo7VFFQ==\r\n     volumes:\r\n       - ./config:/opt/app/config\r\n       - ./src:/opt/app/src\r\n       - ./package.json:/opt/package.json\r\n"
+                },
+                {
+                    "date": 1680557219692,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n version: '3'\r\n services:\r\n   strapi:\r\n-    container_name: strapi\r\n+    container_name: mfservice-strapi\r\n     build: .\r\n     image: strapi:latest\r\n     restart: unless-stopped\r\n     env_file: .env\r\n"
+                }
+            ],
+            "date": 1680557033147,
+            "name": "Commit-0",
+            "content": "version: '3'\r\nservices:\r\n  strapi:\r\n    container_name: strapi\r\n    build: .\r\n    image: strapi:latest\r\n    restart: unless-stopped\r\n    env_file: .env\r\n    environment:\r\n      DATABASE_CLIENT: ${DATABASE_CLIENT}\r\n      DATABASE_HOST: strapiDB\r\n      DATABASE_PORT: ${DATABASE_PORT}\r\n      DATABASE_NAME: ${DATABASE_NAME}\r\n      DATABASE_USERNAME: ${DATABASE_USERNAME}\r\n      DATABASE_PASSWORD: ${DATABASE_PASSWORD}\r\n      JWT_SECRET: ${JWT_SECRET}\r\n      ADMIN_JWT_SECRET: ${ADMIN_JWT_SECRET}\r\n      APP_KEYS: ${APP_KEYS}\r\n      NODE_ENV: ${NODE_ENV}\r\n    volumes:\r\n      - ./config:/opt/app/config\r\n      - ./src:/opt/app/src\r\n      - ./package.json:/opt/package.json\r\n      - ./yarn.lock:/opt/yarn.lock\r\n      - ./.env:/opt/app/.env\r\n      - ./public/uploads:/opt/app/public/uploads\r\n    ports:\r\n      - '1337:1337'\r\n    networks:\r\n      - strapi\r\n\r\nvolumes:\r\n  strapi-data:\r\n\r\nnetworks:\r\n  strapi:\r\n    name: Strapi\r\n    driver: bridge"
+        }
+    ]
+}

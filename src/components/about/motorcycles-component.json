@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_about_motorcycles_components",
+  "info": {
+    "displayName": "MotorcyclesComponent",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "showMoreLabel": {
+      "type": "string"
+    },
+    "motorcycles": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::motorcycle.motorcycle"
+    }
+  }
+}

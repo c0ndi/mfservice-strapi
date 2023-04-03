@@ -1,0 +1,43 @@
+{
+  "kind": "singleType",
+  "collectionName": "shareds",
+  "info": {
+    "singularName": "shared",
+    "pluralName": "shareds",
+    "displayName": "Shared",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "phoneNumber": {
+      "type": "string"
+    },
+    "formComponent": {
+      "displayName": "FormComponent",
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.form-component"
+    },
+    "facebookLink": {
+      "type": "string"
+    },
+    "instagramLink": {
+      "type": "string"
+    },
+    "nipNumber": {
+      "type": "string"
+    },
+    "address": {
+      "type": "string"
+    },
+    "nav": {
+      "displayName": "nav",
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.nav"
+    }
+  }
+}

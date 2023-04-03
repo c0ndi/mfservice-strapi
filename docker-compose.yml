@@ -1,0 +1,35 @@
+version: '3'
+services:
+  strapi:
+    container_name: mfservice-strapi
+    build: .
+    image: strapi:latest
+    restart: unless-stopped
+    env_file: .env
+    environment:
+      DATABASE_CLIENT: 
+      DATABASE_FILENAME: 
+      JWT_SECRET: 
+      ADMIN_JWT_SECRET: 
+      APP_KEYS: 
+      API_TOKEN_SALT: 
+      TRANSFER_TOKEN_SALT: 
+    volumes:
+      - ./config:/opt/app/config
+      - ./src:/opt/app/src
+      - ./package.json:/opt/package.json
+      - ./yarn.lock:/opt/yarn.lock
+      - ./.env:/opt/app/.env
+      - ./public/uploads:/opt/app/public/uploads
+    ports:
+      - '1337:1337'
+    networks:
+      - strapi
+
+volumes:
+  strapi-data:
+
+networks:
+  strapi:
+    name: Strapi
+    driver: bridge
