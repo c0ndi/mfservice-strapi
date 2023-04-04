@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 8,
+            "activePatchIndex": 10,
             "patches": [
                 {
                     "date": 1680556902904,
@@ -40,6 +40,14 @@
                 {
                     "date": 1680559881145,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-FROM strapi/base\r\n+FROM node:16-alpine\r\n \r\n WORKDIR /app\r\n \r\n COPY ./package.json ./\r\n"
+                },
+                {
+                    "date": 1680597058154,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,5 +14,33 @@\n RUN npm run build\r\n \r\n EXPOSE 1337\r\n \r\n-CMD [\"npm\", \"start\"]\n\\ No newline at end of file\n+CMD [\"npm\", \"start\"]\r\n+\r\n+\r\n+FROM node:16-alpine as build\r\n+# Installing libvips-dev for sharp Compatibility\r\n+RUN apk update && apk add --no-cache build-base gcc autoconf automake zlib-dev libpng-dev vips-dev && rm -rf /var/cache/apk/* > /dev/null 2>&1\r\n+ARG NODE_ENV=production\r\n+ENV NODE_ENV=${NODE_ENV}\r\n+WORKDIR /opt/\r\n+COPY ./package.json ./package-lock.json ./\r\n+ENV PATH /opt/node_modules/.bin:$PATH\r\n+RUN npm install --production\r\n+WORKDIR /opt/app\r\n+COPY ./ .\r\n+RUN npm run build\r\n+\r\n+\r\n+FROM node:16-alpine\r\n+# Installing libvips-dev for sharp Compatibility\r\n+RUN apk add vips-dev\r\n+RUN rm -rf /var/cache/apk/*\r\n+ARG NODE_ENV=production\r\n+ENV NODE_ENV=${NODE_ENV}\r\n+WORKDIR /opt/app\r\n+COPY --from=build /opt/node_modules ./node_modules\r\n+ENV PATH /opt/node_modules/.bin:$PATH\r\n+COPY --from=build /opt/app ./\r\n+EXPOSE 1337\r\n+CMD [\"npm\", \"run\",\"start\"]\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1680597071365,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,24 +1,4 @@\n-FROM node:16-alpine\r\n-\r\n-WORKDIR /app\r\n-\r\n-COPY ./package.json ./\r\n-COPY ./package-lock.json ./\r\n-\r\n-RUN npm install\r\n-\r\n-COPY . .\r\n-\r\n-ENV NODE_ENV production\r\n-\r\n-RUN npm run build\r\n-\r\n-EXPOSE 1337\r\n-\r\n-CMD [\"npm\", \"start\"]\r\n-\r\n-\r\n FROM node:16-alpine as build\r\n # Installing libvips-dev for sharp Compatibility\r\n RUN apk update && apk add --no-cache build-base gcc autoconf automake zlib-dev libpng-dev vips-dev && rm -rf /var/cache/apk/* > /dev/null 2>&1\r\n ARG NODE_ENV=production\r\n"
                 }
             ],
             "date": 1680556902904,
