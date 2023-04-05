@@ -1,15 +1,18 @@
 {
   "collectionName": "components_shared_links",
   "info": {
-    "displayName": "links"
+    "displayName": "links",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "linkLabel": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "linkUrl": {
-      "type": "string"
+      "type": "string",
+      "required": true
     }
   }
 }

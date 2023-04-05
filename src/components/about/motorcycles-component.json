@@ -7,10 +7,12 @@
   "options": {},
   "attributes": {
     "heading": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "showMoreLabel": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "motorcycles": {
       "type": "relation",

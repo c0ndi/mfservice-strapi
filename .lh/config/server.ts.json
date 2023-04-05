@@ -1,0 +1,26 @@
+{
+    "sourceFile": "config/server.ts",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1680599009045,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1680599016277,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,7 @@\n const strapi = require('@strapi/strapi');\n+   const app = strapi({ distDir: '<path_to_your_out_dir>' });\n+    app.start();\n \n export default ({ env }) => ({\n   host: env('HOST', '0.0.0.0'),\n   port: env.int('PORT', 1337),\n"
+                },
+                {
+                    "date": 1680599153496,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,10 @@\n+export default ({ env }) => ({\n+  host: env('HOST', '0.0.0.0'),\n+  port: env.int('PORT', 1337),\n+  app: {\n+    keys: env.array('APP_KEYS'),\n+  },\n+  webhooks: {\n+    populateRelations: env.bool('WEBHOOKS_POPULATE_RELATIONS', false),\n+  },\n+});\n"
+                }
+            ],
+            "date": 1680599009045,
+            "name": "Commit-0",
+            "content": "const strapi = require('@strapi/strapi');\n\nexport default ({ env }) => ({\n  host: env('HOST', '0.0.0.0'),\n  port: env.int('PORT', 1337),\n  app: {\n    keys: env.array('APP_KEYS'),\n  },\n  webhooks: {\n    populateRelations: env.bool('WEBHOOKS_POPULATE_RELATIONS', false),\n  },\n});\n"
+        }
+    ]
+}

@@ -7,26 +7,27 @@
   "options": {},
   "attributes": {
     "heading": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "description": {
-      "type": "text"
+      "type": "text",
+      "required": true
     },
     "buttonLabel": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "faqLabel": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "covers": {
       "type": "media",
       "multiple": true,
-      "required": false,
+      "required": true,
       "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
+        "images"
       ]
     }
   }

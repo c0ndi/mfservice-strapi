@@ -13,31 +13,38 @@
   "pluginOptions": {},
   "attributes": {
     "phoneNumber": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "formComponent": {
       "displayName": "FormComponent",
       "type": "component",
       "repeatable": false,
-      "component": "shared.form-component"
+      "component": "shared.form-component",
+      "required": true
     },
     "facebookLink": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "instagramLink": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "nipNumber": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "address": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "nav": {
       "displayName": "nav",
       "type": "component",
       "repeatable": false,
-      "component": "shared.nav"
+      "component": "shared.nav",
+      "required": true
     }
   }
 }

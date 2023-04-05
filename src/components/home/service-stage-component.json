@@ -7,7 +7,8 @@
   "options": {},
   "attributes": {
     "heading": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "singleStages": {
       "displayName": "singleStages",
@@ -15,7 +16,8 @@
       "repeatable": true,
       "component": "home.single-stages",
       "max": 5,
-      "min": 3
+      "min": 3,
+      "required": true
     }
   }
 }

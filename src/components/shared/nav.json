@@ -1,7 +1,8 @@
 {
   "collectionName": "components_shared_navs",
   "info": {
-    "displayName": "nav"
+    "displayName": "nav",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -9,7 +10,8 @@
       "displayName": "links",
       "type": "component",
       "repeatable": true,
-      "component": "shared.links"
+      "component": "shared.links",
+      "required": true
     }
   }
 }

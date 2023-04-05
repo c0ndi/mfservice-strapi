@@ -1,15 +1,18 @@
 {
   "collectionName": "components_about_motorcycle_parameters",
   "info": {
-    "displayName": "motorcycleParameters"
+    "displayName": "motorcycleParameters",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "name": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "parameter": {
-      "type": "string"
+      "type": "string",
+      "required": true
     }
   }
 }
