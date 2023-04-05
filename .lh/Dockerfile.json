@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 15,
+            "activePatchIndex": 16,
             "patches": [
                 {
                     "date": 1680556902904,
@@ -68,6 +68,10 @@
                 {
                     "date": 1680598328442,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,8 @@\n ARG NODE_ENV=development\r\n ENV NODE_ENV=${NODE_ENV}\r\n WORKDIR /opt/\r\n COPY ./package.json ./package-lock.json ./\r\n-ENV PATH /opt/node_modules/.bin:$PATH\r\n RUN npm install\r\n WORKDIR /opt/app\r\n COPY ./ .\r\n RUN npm run build\r\n"
+                },
+                {
+                    "date": 1680732159389,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,13 @@\n+\r\n FROM node:16-alpine\r\n # Installing libvips-dev for sharp Compatibility\r\n+RUN apk update && apk add --no-cache build-base gcc autoconf automake zlib-dev libpng-dev nasm bash vips-dev\r\n ARG NODE_ENV=development\r\n ENV NODE_ENV=${NODE_ENV}\r\n WORKDIR /opt/\r\n COPY ./package.json ./package-lock.json ./\r\n+ENV PATH /opt/node_modules/.bin:$PATH\r\n RUN npm install\r\n WORKDIR /opt/app\r\n COPY ./ .\r\n RUN npm run build\r\n"
                 }
             ],
             "date": 1680556902904,
