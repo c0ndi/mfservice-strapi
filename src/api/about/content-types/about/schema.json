@@ -19,7 +19,7 @@
       "component": "about.hero-component-about",
       "required": true
     },
-    "motorycleComponent": {
+    "motorcyclesComponent": {
       "displayName": "MotorcyclesComponent",
       "type": "component",
       "repeatable": false,
@@ -30,7 +30,8 @@
       "displayName": "HistoryComponent",
       "type": "component",
       "repeatable": false,
-      "component": "about.history-component"
+      "component": "about.history-component",
+      "required": true
     },
     "seo": {
       "type": "component",

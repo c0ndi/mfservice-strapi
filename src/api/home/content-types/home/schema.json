@@ -33,12 +33,6 @@
       "component": "home.about-us-component",
       "required": true
     },
-    "faqComponent": {
-      "displayName": "FaqComponent",
-      "type": "component",
-      "repeatable": false,
-      "component": "home.faq-component"
-    },
     "seo": {
       "type": "component",
       "repeatable": false,

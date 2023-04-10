@@ -21,9 +21,9 @@
     "buttonLink": {
       "type": "enumeration",
       "enum": [
-        "/o-nas/#motocykle",
-        "/o-nas/#historia",
-        "/o-nas/#kontakt"
+        "/motocykle/#motocykle",
+        "/motocykle/#historia",
+        "/motocykle/#kontakt"
       ],
       "required": true
     }

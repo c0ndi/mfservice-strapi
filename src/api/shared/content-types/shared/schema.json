@@ -45,6 +45,12 @@
       "repeatable": false,
       "component": "shared.nav",
       "required": true
+    },
+    "faqComponent": {
+      "type": "component",
+      "repeatable": false,
+      "component": "home.faq-component",
+      "required": true
     }
   }
 }

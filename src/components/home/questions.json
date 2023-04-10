@@ -1,15 +1,18 @@
 {
   "collectionName": "components_home_questions",
   "info": {
-    "displayName": "questions"
+    "displayName": "questions",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "question": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "answer": {
-      "type": "text"
+      "type": "text",
+      "required": true
     }
   }
 }
