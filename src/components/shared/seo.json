@@ -1,7 +1,8 @@
 {
   "collectionName": "components_shared_seos",
   "info": {
-    "displayName": "seo"
+    "displayName": "seo",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -26,7 +27,7 @@
         "videos"
       ]
     },
-    "metaSocial": {
+    "metaSocialFacebook": {
       "type": "component",
       "repeatable": true,
       "component": "shared.meta-social"
