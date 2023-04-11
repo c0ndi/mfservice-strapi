@@ -14,7 +14,7 @@ export default [
     config: {
       enabled: true,
       headers: '*',
-      origin: ['http://localhost:1337', 'https://mfservice.vercel.app/']
+      origin: ['http://localhost:1337', 'https://mfservice.vercel.app/', "http://13.49.159.208:1337"]
     }
   },
 ];

@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 1,
+            "activePatchIndex": 3,
             "patches": [
                 {
                     "date": 1681170346744,
@@ -12,6 +12,14 @@
                 {
                     "date": 1681170366788,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,20 @@\n+export default [\n+  'strapi::errors',\n+  'strapi::security',\n+  'strapi::cors',\n+  'strapi::poweredBy',\n+  'strapi::logger',\n+  'strapi::query',\n+  'strapi::body',\n+  'strapi::session',\n+  'strapi::favicon',\n+  'strapi::public',\n+  {\n+    name: 'strapi::cors',\n+    config: {\n+      enabled: true,\n+      headers: '*',\n+      origin: ['http://localhost:1337', 'https://mfservice.vercel.app/']\n+    }\n+  },\n+];\n"
+                },
+                {
+                    "date": 1681171945234,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,28 +13,8 @@\n     name: 'strapi::cors',\n     config: {\n       enabled: true,\n       headers: '*',\n-      origin: ['http://localhost:1337', 'https://mfservice.vercel.app/']\n+      origin: ['http://localhost:1337', 'https://mfservice.vercel.app/', \"http://13.49.159.208\"]\n     }\n   },\n ];\n-export default [\n-  'strapi::errors',\n-  'strapi::security',\n-  'strapi::cors',\n-  'strapi::poweredBy',\n-  'strapi::logger',\n-  'strapi::query',\n-  'strapi::body',\n-  'strapi::session',\n-  'strapi::favicon',\n-  'strapi::public',\n-    {\n-    name: 'strapi::cors',\n-    config: {\n-      enabled: true,\n-      headers: '*',\n-      origin: ['http://localhost:1337', 'http://example2']\n-    }\n-  },\n-];\n"
+                },
+                {
+                    "date": 1681171954617,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,8 +13,8 @@\n     name: 'strapi::cors',\n     config: {\n       enabled: true,\n       headers: '*',\n-      origin: ['http://localhost:1337', 'https://mfservice.vercel.app/', \"http://13.49.159.208\"]\n+      origin: ['http://localhost:1337', 'https://mfservice.vercel.app/', \"http://13.49.159.208:1337\"]\n     }\n   },\n ];\n"
                 }
             ],
             "date": 1681170346744,
