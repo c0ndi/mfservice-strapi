@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 3,
+            "activePatchIndex": 4,
             "patches": [
                 {
                     "date": 1681170346744,
@@ -20,6 +20,10 @@
                 {
                     "date": 1681171954617,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,8 +13,8 @@\n     name: 'strapi::cors',\n     config: {\n       enabled: true,\n       headers: '*',\n-      origin: ['http://localhost:1337', 'https://mfservice.vercel.app/', \"http://13.49.159.208\"]\n+      origin: ['http://localhost:1337', 'https://mfservice.vercel.app/', \"http://13.49.159.208:1337\"]\n     }\n   },\n ];\n"
+                },
+                {
+                    "date": 1681235221767,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,13 +8,5 @@\n   'strapi::body',\n   'strapi::session',\n   'strapi::favicon',\n   'strapi::public',\n-  {\n-    name: 'strapi::cors',\n-    config: {\n-      enabled: true,\n-      headers: '*',\n-      origin: ['http://localhost:1337', 'https://mfservice.vercel.app/', \"http://13.49.159.208:1337\"]\n-    }\n-  },\n ];\n"
                 }
             ],
             "date": 1681170346744,
