@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 4,
+            "activePatchIndex": 6,
             "patches": [
                 {
                     "date": 1680557270822,
@@ -24,6 +24,14 @@
                 {
                     "date": 1681235398473,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -79,9 +79,9 @@\n *#\n ssl\n .idea\n nbproject\n-public/uploads/*\n+# public/uploads/*\n !public/uploads/.gitkeep\n \n ############################\n # Node.js\n"
+                },
+                {
+                    "date": 1681235420992,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,121 @@\n+############################\n+# OS X\n+############################\n+\n+.DS_Store\n+.AppleDouble\n+.LSOverride\n+Icon\n+.Spotlight-V100\n+.Trashes\n+._*\n+\n+\n+############################\n+# Linux\n+############################\n+\n+*~\n+\n+\n+############################\n+# Windows\n+############################\n+\n+Thumbs.db\n+ehthumbs.db\n+Desktop.ini\n+$RECYCLE.BIN/\n+*.cab\n+*.msi\n+*.msm\n+*.msp\n+\n+\n+############################\n+# Packages\n+############################\n+\n+*.7z\n+*.csv\n+*.dat\n+*.dmg\n+*.gz\n+*.iso\n+*.jar\n+*.rar\n+*.tar\n+*.zip\n+*.com\n+*.class\n+*.dll\n+*.exe\n+*.o\n+*.seed\n+*.so\n+*.swo\n+*.swp\n+*.swn\n+*.swm\n+*.out\n+*.pid\n+\n+\n+############################\n+# Logs and databases\n+############################\n+\n+.tmp\n+*.log\n+*.sql\n+*.sqlite\n+*.sqlite3\n+\n+\n+############################\n+# Misc.\n+############################\n+\n+*#\n+ssl\n+.idea\n+nbproject\n+public/uploads/*\n+!public/uploads/.gitkeep\n+\n+############################\n+# Node.js\n+############################\n+\n+lib-cov\n+lcov.info\n+pids\n+logs\n+results\n+node_modules\n+.node_history\n+\n+############################\n+# Tests\n+############################\n+\n+testApp\n+coverage\n+\n+############################\n+# Strapi\n+############################\n+\n+.env\n+license.txt\n+exports\n+*.cache\n+dist\n+build\n+.strapi-updater.json\n+\n+############################\n+# Compose\n+############################\n+\n+d.yml\n"
+                },
+                {
+                    "date": 1681250630482,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -64,9 +64,9 @@\n ############################\n # Logs and databases\n ############################\n \n-.tmp\n+# .tmp\n *.log\n *.sql\n *.sqlite\n *.sqlite3\n@@ -79,131 +79,10 @@\n *#\n ssl\n .idea\n nbproject\n-public/uploads/*\n-!public/uploads/.gitkeep\n-\n-############################\n-# Node.js\n-############################\n-\n-lib-cov\n-lcov.info\n-pids\n-logs\n-results\n-node_modules\n-.node_history\n-\n-############################\n-# Tests\n-############################\n-\n-testApp\n-coverage\n-\n-############################\n-# Strapi\n-############################\n-\n-.env\n-license.txt\n-exports\n-*.cache\n-dist\n-build\n-.strapi-updater.json\n-\n-############################\n-# Compose\n-############################\n-\n-d.yml\n-############################\n-# OS X\n-############################\n-\n-.DS_Store\n-.AppleDouble\n-.LSOverride\n-Icon\n-.Spotlight-V100\n-.Trashes\n-._*\n-\n-\n-############################\n-# Linux\n-############################\n-\n-*~\n-\n-\n-############################\n-# Windows\n-############################\n-\n-Thumbs.db\n-ehthumbs.db\n-Desktop.ini\n-$RECYCLE.BIN/\n-*.cab\n-*.msi\n-*.msm\n-*.msp\n-\n-\n-############################\n-# Packages\n-############################\n-\n-*.7z\n-*.csv\n-*.dat\n-*.dmg\n-*.gz\n-*.iso\n-*.jar\n-*.rar\n-*.tar\n-*.zip\n-*.com\n-*.class\n-*.dll\n-*.exe\n-*.o\n-*.seed\n-*.so\n-*.swo\n-*.swp\n-*.swn\n-*.swm\n-*.out\n-*.pid\n-\n-\n-############################\n-# Logs and databases\n-############################\n-\n-.tmp\n-*.log\n-*.sql\n-*.sqlite\n-*.sqlite3\n-\n-\n-############################\n-# Misc.\n-############################\n-\n-*#\n-ssl\n-.idea\n-nbproject\n # public/uploads/*\n-!public/uploads/.gitkeep\n+# !public/uploads/.gitkeep\n \n ############################\n # Node.js\n ############################\n"
                 }
             ],
             "date": 1680557270822,

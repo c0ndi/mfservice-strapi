@@ -11,8 +11,16 @@
       "required": true
     },
     "linkUrl": {
-      "type": "string",
-      "required": true
+      "type": "enumeration",
+      "enum": [
+        "/#obsługa",
+        "/#motocykle",
+        "/#faq",
+        "/#kontakt",
+        "/motocykle/#motocykle",
+        "/motocykle/#historia",
+        "/motocykle/#kontakt"
+      ]
     }
   }
 }
