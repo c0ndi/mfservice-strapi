@@ -18,9 +18,9 @@
       "type": "string",
       "required": true
     },
-    "cover": {
+    "covers": {
       "type": "media",
-      "multiple": false,
+      "multiple": true,
       "required": true,
       "allowedTypes": [
         "images"
